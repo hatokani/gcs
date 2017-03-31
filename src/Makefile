@@ -11,6 +11,7 @@ $(TARGET): $(OBJECTS) $(LIBS)
 	$(COMPILER) -o $@ $(OBJECTS)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cc
+	clang-format -i $(SOURCES)
 	$(COMPILER) $(CFRAGS) -o $@ -c $<
 clean:
 	-rm -f $(OBJECTS) $(TARGET)
