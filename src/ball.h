@@ -1,14 +1,14 @@
 #ifndef BALL_H
 #define BALL_H
 
-class ball{
+class Ball{
 
 int x;
 int y;
 
 public:
 
-ball();
+Ball();
 int get_x() const;
 int get_y() const;
 void set_x(int value);

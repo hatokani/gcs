@@ -1,10 +1,10 @@
 #include "ball.h"
 
-ball::ball() : x(0), y(0) {}
+Ball::Ball() : x(0), y(0) {}
 
-int ball::get_x() const { return x; }
-int ball::get_y() const { return y; }
-void ball::set_x(int value) {x = value}
-void ball::set_y(int value) {y = value}
+int Ball::get_x() const { return x; }
+int Ball::get_y() const { return y; }
+void Ball::set_x(int value) { x = value; }
+void Ball::set_y(int value) { y = value; }
 
 
